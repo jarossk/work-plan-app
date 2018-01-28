@@ -1,6 +1,7 @@
 # Work Plan App
 
 Work plan it's simple app created to read local file, convert into json format and display on web.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5 and Node.js v8.7.0.
 
 ## Installing

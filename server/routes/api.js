@@ -3,10 +3,21 @@ const fs = require('fs');
 const express = require('express');
 const router  = express.Router();
 
-router.get('/api', (req, res, next) => {
+function readF() {
+
+}
+
+router.get('/content', (req, res) => {
     fs.readFile(path.resolve(__dirname, '../../tmp/hello.txt'), { encoding: 'utf8' }, (err, content) => {
         if (err) return console.log(err);
-        res.json(content);
+         let dataArray = [];
+         let convJson = {
+            _data: ""
+         };
+        convJson._data = content;
+        dataArray.push(convJson);
+        console.log(dataArray);
+        res.json(dataArray);
     });
 });
 

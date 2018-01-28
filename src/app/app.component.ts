@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
     // this._apiService.getData()
     //   .subscribe((res) =>  {
     //     this.content = res;
-    //     console.log(res);
     //   });
    }
 

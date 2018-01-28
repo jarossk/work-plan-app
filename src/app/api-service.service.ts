@@ -19,12 +19,8 @@ export class ApiService {
           .map((res: Response) => {
               console.log(res);
               return <IData[]>res.json();
-            // return result.json().data;
           })
           .catch(this.handleError);
-          // .catch((err: Response|any) => {
-          //     return Observable.throw(err.json());
-          // });
   }
 
   private handleError(err: Response) {
